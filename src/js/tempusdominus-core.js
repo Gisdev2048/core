@@ -783,7 +783,7 @@ const DateTimePicker = (($, moment) => {
         }
 
         _getLastPickedDate() {
-            return this._dates[this._getLastPickedDateIndex()];
+            return this._dates[this._getLastPickedDateIndex()] || this.getMoment(null);
         }
 
         _getLastPickedDateIndex() {
